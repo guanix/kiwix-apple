@@ -119,6 +119,7 @@ private struct Content: View {
                 Search() { result in
                     url = result.url
                     isSearchActive = false
+                    searchViewModel.searchText = ""
                 }
             } else if url == nil {
                 Welcome(url: $url)
